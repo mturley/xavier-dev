@@ -4,6 +4,20 @@ This repo contains scripts and instructions to help developers and stakeholders 
 
 # Setup for macOS:
 
+Open a Terminal and run the following commands.
+
+First, install Homebrew:
+```sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Then, use Homebrew to install git:
+```sh
+brew install git
+```
+
+Then, use git to clone this repository and run its setup script:
+
 ```sh
 git clone git@github.com:mturley/xavier-dev.git
 cd xavier-dev
