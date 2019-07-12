@@ -39,6 +39,10 @@ You may be asked for your macOS password to install dependencies.
   ```
 * Open your browser to https://ci.foo.redhat.com:1337/staging/migration-analytics
 
+* If you get a privacy error, click Advanced and Proceed anyway. An insecure connection is okay for local use.
+
+* Log in using test credentials (ask someone who knows).
+
 # Updating with new changes from GitHub:
 
 This will update and rebuild the environment from the current branch in each repo.
