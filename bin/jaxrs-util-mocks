@@ -2,7 +2,7 @@
 
 WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
 
-cd ../insights-chrome
-npm run start
+cd src/jaxrs-util-mocks
+./mvnw compile quarkus:dev
 
 cd $WD

@@ -2,7 +2,7 @@
 
 WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
 
-cd ../insights-chrome/build
+cd src/insights-chrome/build
 SPANDX_CONFIG=../../xavier-ui/profiles/local-frontend-and-api.js LOCAL_CHROME=true sh ../../insights-proxy/scripts/run.sh
 
 cd $WD

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Go to the path of this script
+WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
+
+# Install dependencies
+helpers/install-deps-mac
+
+# Clone and set up repositories
+helpers/setup-repos
+
+# Go back to where we started
+cd $WD

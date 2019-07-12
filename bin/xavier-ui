@@ -2,7 +2,7 @@
 
 WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
 
-cd ../jaxrs-util-mocks
-./mvnw compile quarkus:dev
+cd src/xavier-ui
+npm run start
 
 cd $WD

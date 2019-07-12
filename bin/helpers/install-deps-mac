@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Install/Update Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+
+# Install NodeJS and NPM
+brew install node
+
+# Install JDK 8
+brew tap caskroom/versions
+brew cask install adoptopenjdk8
+
+# Install Maven
+brew install maven
