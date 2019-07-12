@@ -47,7 +47,7 @@ echo "    bin/insights-chrome"
 echo "    bin/insights-proxy"
 echo "    bin/jaxrs-util-mocks"
 echo "    bin/xavier-ui"
-echo "* Open your browser to https://ci.foo.redhat.com:1337/staging/migration-analytics"
+echo "* Browse to https://ci.foo.redhat.com:1337/staging/migration-analytics"
 echo
 echo "To update in the future:"
 echo "  cd xavier-dev"
