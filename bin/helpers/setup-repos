@@ -9,7 +9,7 @@ mkdir -p src
 cd src
 
 # Setup insights-proxy
-git clone git@github.com:RedHatInsights/insights-proxy.git
+git clone https://github.com/RedHatInsights/insights-proxy.git
 cd insights-proxy
 echo
 echo "Setting up /etc/hosts entries for the Insights proxy requires sudo."
@@ -20,19 +20,19 @@ bash scripts/update.sh
 cd ..
 
 # Setup insights-chrome
-git clone git@github.com:RedHatInsights/insights-chrome.git
+git clone https://github.com/RedHatInsights/insights-chrome
 cd insights-chrome
 npm install
 npm run build
 cd ..
 
 # Setup jaxrs-util-mocks
-git clone git@github.com:carlosthe19916/jaxrs-util-mocks.git
+git clone https://github.com/carlosthe19916/jaxrs-util-mocks.git
 cd jaxrs-util-mocks
 mvn install
 
 # Setup xavier-ui
-git clone git@github.com:project-xavier/xavier-ui.git
+git clone https://github.com/project-xavier/xavier-ui.git
 cd xavier-ui
 npm ci
 cd ..

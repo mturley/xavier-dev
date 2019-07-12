@@ -19,7 +19,7 @@ brew install git
 Then, use git to clone this repository and run its setup script:
 
 ```sh
-git clone git@github.com:mturley/xavier-dev.git
+git clone https://github.com/mturley/xavier-dev.git
 cd xavier-dev
 bin/setup-mac
 ```
@@ -55,8 +55,8 @@ For example, to add Mike's and Carlos' remotes (do this once):
 
 ```sh
 cd xavier-dev/src/xavier-ui
-git remote add carlos git@github.com:carlosthe19916/xavier-ui.git
-git remote add mike git@github.com:mturley/xavier-ui.git
+git remote add carlos https://github.com/carlosthe19916/xavier-ui.git
+git remote add mike https://github.com/mturley/xavier-ui.git
 ```
 
 To look at a PR's changes, first you need to know what branch to view and where to fetch it from. You can find out which branch relates to a PR by looking at the line below a PR's title on GitHub. For example, if you look at https://github.com/project-xavier/xavier-ui/pull/22, the line "carlosthe19916 wants to merge 64 commits into project-xavier:master from carlosthe19916:sprint1" indicates that this PR is on the branch `sprint1`.
