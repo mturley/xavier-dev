@@ -30,7 +30,7 @@ You may be asked for your macOS password to install dependencies.
 
 * Open 4 terminal windows/tabs
 * Navigate them all to this directory (`cd xavier-dev`)
-* Run each the following commands in one of the terminal windows:
+* Run one the following commands in each of the terminal windows:
   ```sh
   bin/insights-chrome
   bin/insights-proxy
