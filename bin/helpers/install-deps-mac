@@ -18,7 +18,7 @@ brew cask install docker
 
 echo
 echo "Starting Docker..."
-echo "Docker will ask you for privileged access. Click Confirm."
-echo "Once you've done this, return here to continue setup."
+echo "Docker will ask you for privileged access."
+echo "Proceed through the prompts and return here when Docker Desktop is up and running."
 open /Applications/Docker.app
-read -p "Press enter to continue..."
+read -p "Press enter once Docker is running to continue..."
