@@ -6,6 +6,9 @@ brew update
 # Install NodeJS and NPM
 brew install node
 
+# Install Python 2
+brew install python2
+
 # Install JDK 8
 brew tap caskroom/versions
 brew cask install adoptopenjdk8
