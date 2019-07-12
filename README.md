@@ -24,6 +24,8 @@ cd xavier-dev
 bin/setup-mac
 ```
 
+You may be asked for your macOS password to install dependencies.
+
 # Running the environment:
 
 * Open 4 terminal windows/tabs
