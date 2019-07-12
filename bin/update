@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
+
+echo "Pulling insights-chrome from GitHub..."
+cd ../src/insights-chrome
+git pull
+echo "Rebuilding insights-chrome..."
+npm install
+npm run build
+
+echo "Pulling insights-proxy from GitHub..."
+cd ../insights-proxy
+git pull
+echo "Rebuilding insights-proxy..."
+npm install
+bash scripts/update.sh
+
+echo "Pulling jaxrs-util-mocks from GitHub..."
+cd ../jaxrs-util-mocks
+git pull
+echo "Rebuilding jaxrs-util-mocks..."
+mvn install
+
+echo "Pulling xavier-ui from GitHub..."
+cd ../xavier-ui
+git pull
+echo "Rebuilding xavier-ui..."
+npm ci
+
+echo
+echo "Successfully updated all repositories."
+echo "Restart your environment to see the changes."
+echo
+
+cd $WD
