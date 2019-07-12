@@ -2,7 +2,7 @@
 
 WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
 
-cd src/insights-chrome
+cd ../src/insights-chrome
 npm run start
 
 cd $WD
