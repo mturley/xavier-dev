@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Install coreutils so we have realpath
+brew install coreutils
+
 # Go to the path of this script
 WD=`pwd`; SCRIPT=`realpath $0`; cd `dirname $SCRIPT`
 
